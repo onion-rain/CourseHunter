@@ -12,7 +12,13 @@ UESTC.py主要使用selenium模块来模拟浏览器操作，需要下载chrome�
 
 在`option.add_argument(r"user-data-dir=C:\Users\yulin\AppData\Local\Google\Chrome\User Data")` 中将地址更换为chrome用户数据所在位置（以便使用cookie免登陆进行抢课）。
 
+浏览器需设置启动时继续浏览上次打开的网页
+![](readme_imgs/1.png)
+
 在`xk.selectCourse(course_nums=["0808126006", "0808126007"])`中将`course_nums`更换为需要抢课的课程编号。
+
+课程编号获取：
+![](readme_imgs/0.png)
 
 ## Gotcha
 
