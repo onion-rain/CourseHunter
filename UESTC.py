@@ -6,15 +6,17 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
 
+# D:\Python\excel\Scripts\Activate.ps1
+
 
 class CourseSelect(object):
     def __init__(
         self,
-        driver_path: str = r"C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe",
+        driver_path: str = r"D:/chromedriver.exe",
     ):
         option = webdriver.ChromeOptions()
         option.add_argument(
-            r"user-data-dir=C:\Users\yulin\AppData\Local\Google\Chrome\User Data"
+            r"user-data-dir=C:/Users/onion_rain\AppData/Local/Google/Chrome/User Data"
         )
         # option.add_experimental_option("excludeSwitches", ["enable-automation"])
         self.browser = webdriver.Chrome(driver_path, options=option)
@@ -45,5 +47,5 @@ class CourseSelect(object):
 if __name__ == "__main__":
     xk = CourseSelect()
     while True:
-        xk.selectCourse(course_nums=["0808126006", "0808126007"])
+        xk.selectCourse(course_nums=["1515069"])
         time.sleep(3)
